@@ -293,6 +293,7 @@ body.light-mode .projects_list::-webkit-scrollbar-thumb {
   transform: scale(1.05);
 }
 
+
 .apex_images {
   display: flex;
   align-items: center;
@@ -309,10 +310,11 @@ body.light-mode .projects_list::-webkit-scrollbar-thumb {
   width: 100%;
   box-sizing: border-box;
   z-index: -999;
+  height: 450px
 }
 
 .apex_images img {
-  width: 400px;
+  width: 320px;
   transition: 0.5s;
   max-width: 100%;
   border: 1px solid white;
@@ -324,13 +326,9 @@ body.light-mode .projects_list::-webkit-scrollbar-thumb {
 }
 
 #MacApp {
-  width: 630px;
+  width: 505px;
 }
 
-#Trekker {
-  width: 800px;
-  margin-bottom: 12px;
-}
 
 .apex_images img:not(:last-child) {
   margin-right: 38px; /* Adjust gap as needed */
