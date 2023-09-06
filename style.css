@@ -308,6 +308,7 @@ body.light-mode .projects_list::-webkit-scrollbar-thumb {
   left: 0; /* Align images to the left */
   width: 100%;
   box-sizing: border-box;
+  z-index: -999;
 }
 
 .apex_images img {
