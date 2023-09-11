@@ -228,7 +228,7 @@ a:hover {
 }
 
 .projects_list::-webkit-scrollbar {
-  width: 0.5px; /* Adjust as needed */
+  width: 1px; /* Adjust as needed */
 }
 
 .projects_list::-webkit-scrollbar-track {
