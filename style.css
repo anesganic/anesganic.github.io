@@ -64,7 +64,7 @@ body.light-mode a {
 }
 
 .frame::-webkit-scrollbar {
-  width: 0px; /* Adjust as needed */
+  width: 0px;
 }
 
 .frame::-webkit-scrollbar-track {
@@ -228,7 +228,7 @@ a:hover {
 }
 
 .projects_list::-webkit-scrollbar {
-  width: 1px; /* Adjust as needed */
+  width: 0.5px;
 }
 
 .projects_list::-webkit-scrollbar-track {
@@ -293,11 +293,10 @@ body.light-mode .projects_list::-webkit-scrollbar-thumb {
   transform: scale(1.05);
 }
 
-
 .apex_images {
   display: flex;
   align-items: center;
-  border: none; /* Remove border */
+  border: none;
   padding-left: 38px;
   padding-right: 18px;
   padding-bottom: 18px;
@@ -306,7 +305,7 @@ body.light-mode .projects_list::-webkit-scrollbar-thumb {
   white-space: nowrap;
   position: absolute;
   bottom: 0;
-  left: 0; /* Align images to the left */
+  left: 0;
   width: 100%;
   box-sizing: border-box;
   z-index: -999;
@@ -331,13 +330,96 @@ body.light-mode .projects_list::-webkit-scrollbar-thumb {
 
 
 .apex_images img:not(:last-child) {
-  margin-right: 38px; /* Adjust gap as needed */
+  margin-right: 38px;
 }
 
 .apex_images::-webkit-scrollbar {
-  width: 0px; /* Adjust as needed */
+  width: 0px;
 }
 
 .inverted-image {
-  filter: invert(0.75); /* Invert the colors */
+  filter: invert(0.75);
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .frame {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 12px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .menu {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  nav {
+    margin-top: 20px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    margin: 10px 0;
+  }
+
+  .page_content.home, .page_content.m248 {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .home_aboutme span, .m248_content span, .project-content span {
+    text-align: left;
+  }
+
+  .projects_list {
+    position: static;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  .projects_list li {
+    margin-bottom: 10px;
+  }
+
+  .project-content {
+    position: static;
+    text-align: left;
+  }
+
+  .apex_images {
+    display: none;
+  }
+
+  .apex_images img {
+    width: 100%;
+    max-width: none;
+    margin-right: 0;
+  }
+
+  .apex_images::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  
 }
