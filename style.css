@@ -422,7 +422,7 @@ body.light-mode .projects_list::-webkit-scrollbar-thumb {
   }
 
   .frame {
-    padding: 10px;
+    padding: 20px;
     top: 0;
     left: 0;
     right: 0;
